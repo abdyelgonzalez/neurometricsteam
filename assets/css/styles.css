@@ -206,7 +206,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 84px;
+  min-height: 84px;
+  flex-wrap: nowrap;
 }
 
 .brand {
@@ -265,8 +266,13 @@ section {
   gap: 22px;
 }
 
+.nav-cta {
+  display: none;
+}
+
 .nav-toggle {
   display: none;
+  flex: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -741,6 +747,14 @@ section {
     --section-pad: 72px;
   }
 
+  .brand-tagline {
+    display: none;
+  }
+
+  .header-cta .btn {
+    display: none;
+  }
+
   .main-nav ul {
     display: none;
   }
@@ -748,13 +762,13 @@ section {
   .main-nav ul.is-open {
     display: flex;
     position: absolute;
-    top: 84px;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--white);
     flex-direction: column;
     gap: 0;
-    padding: 8px 32px 20px;
+    padding: 8px 32px 24px;
     border-bottom: 1px solid var(--gray-100);
     box-shadow: var(--shadow-soft);
   }
@@ -766,6 +780,16 @@ section {
   .main-nav ul.is-open a {
     display: block;
     padding: 14px 0;
+  }
+
+  .main-nav ul.is-open .nav-cta {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .main-nav ul.is-open .nav-cta .btn {
+    display: inline-flex;
+    width: 100%;
   }
 
   .nav-toggle {
