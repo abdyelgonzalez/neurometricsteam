@@ -216,6 +216,12 @@ section {
   gap: 10px;
 }
 
+.brand-mark {
+  flex: none;
+  height: 34px;
+  width: auto;
+}
+
 .brand-word {
   font-size: 21px;
   font-weight: 800;
