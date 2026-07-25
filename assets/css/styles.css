@@ -276,6 +276,23 @@ section {
   display: none;
 }
 
+.lang-switch {
+  flex: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--navy);
+  border: 1.5px solid var(--gray-100);
+  border-radius: 999px;
+  padding: 6px 14px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-switch:hover {
+  border-color: var(--teal);
+  color: var(--teal-dark);
+}
+
 .nav-toggle {
   display: none;
   flex: none;
