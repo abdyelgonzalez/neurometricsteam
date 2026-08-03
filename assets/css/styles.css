@@ -86,17 +86,6 @@ p {
   color: var(--teal-dark);
   margin-bottom: 14px;
 }
-.eyebrowMisionVision {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--teal-dark);
-  margin-bottom: 14px;
-}
 
 .eyebrow::before {
   content: "";
@@ -106,12 +95,8 @@ p {
   border-radius: 2px;
 }
 
-.eyebrowMisionVision::before {
-  content: "";
-  width: 22px;
-  height: 2px;
-  background: var(--teal);
-  border-radius: 2px;
+.eyebrow--lg {
+  font-size: 20px;
 }
 
 section {
@@ -544,7 +529,7 @@ section {
   background: var(--teal-pale);
 }
 
-/* ---------- Vision + Pillars band ---------- */
+/* ---------- Mission/Vision + Pillars band ---------- */
 
 .pillars-band {
   background: var(--navy);
@@ -558,6 +543,17 @@ section {
 
 .pillars-band .section-head p {
   color: rgba(255, 255, 255, 0.72);
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 56px;
+}
+
+.mission-vision .section-head {
+  margin-bottom: 0;
 }
 
 .tag-grid {
@@ -881,6 +877,11 @@ section {
   .split {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .footer-grid {
