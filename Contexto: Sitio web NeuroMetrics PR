@@ -1,0 +1,25 @@
+Contexto: Sitio web NeuroMetrics PR
+Qué es: Página informativa de una sola página (index.html + CSS/JS plano, sin frameworks) para NeuroMetrics, una firma de evaluación psicométrica/neurofuncional para organizaciones en Puerto Rico. El diseño se basó en la estructura del sitio de Robert Half (hero oscuro a pantalla completa, franja de estadísticas con borde de acento, tarjetas de servicio, footer oscuro multi-columna) pero con marca y contenido propios de NeuroMetrics.
+
+Repo y despliegue:
+
+Repo local: ~/Dropbox/AGConsulting/neurometricsteam/neurometricsteam
+GitHub: abdyelgonzalez/neurometricsteam, rama main
+Publicado vía GitHub Pages en neurometricsteam.com (dominio custom, archivo CNAME en el repo)
+El CSS se carga con ?v=2 en el <link> para evitar problemas de caché al desplegar cambios
+Estructura de archivos:
+
+index.html — todo el contenido
+assets/css/styles.css — estilos (paleta: navy #0A3054, teal #009CA8, muestreados del logo real)
+assets/js/main.js — toggle del menú móvil
+assets/img/ — logo.png (original), logo-mark.png (recortado, fondo transparente), logo-icon.png (versión ligera para el header), favicons
+favicon.ico, .gitignore (enfocado en macOS ya que se trabaja mayormente ahí)
+Contenido actual (reposicionado): El copy se movió de un enfoque "evaluación docente / instituciones educativas" a un enfoque general de "evaluaciones psicométricas y neurofuncionales para organizaciones", incluyendo el ángulo de neurodiversidad. Los 5 pilares de marca son: Objetividad, Ética, Precisión científica, Confidencialidad, Innovación. Los 5 servicios: Evaluación de Riesgo de Rotación, Perfil Laboral Ideal, Dashboard Ejecutivo, Desarrollo y Coaching Basado en Datos, Modelo Corporativo Integral.
+
+Equipo: Solo aparece Yesenia De León De Jesús (Psicóloga Industrial Organizacional, Lic. #4257). Zuleyka Morales Vélez y Karla Colón Matos fueron removidas a pedido del usuario.
+
+Pendientes / placeholders conocidos:
+
+Contacto en el footer es placeholder: info@neurometricspr.com y +1 (787) 000-0000 — falta reemplazar con datos reales.
+No se publicó la tabla de precios/ingresos internos que venía en la presentación original (info financiera confidencial, no apta para copy público).
+Flujo de trabajo establecido: Cada cambio se revisa/aprueba antes de aplicarse, y el commit + push a GitHub solo se hace con confirmación explícita del usuario en cada ocasión.
